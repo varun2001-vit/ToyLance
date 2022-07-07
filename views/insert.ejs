@@ -1,0 +1,19 @@
+<%- include('partials/header') %>
+<h3>INSERT A TOY</h3>
+
+<form method="post" action="/insert">
+    <div class="form-group">
+      <label for="ToyName">Enter Toyname</label>
+      <input type="text" name="ToyName" placeholder="Enter"class="form-control">
+      
+    </div>
+    <div class="form-group">
+      <label for="Descriptiontoy">Enter Description</label>
+      <textarea class="form-control"  name="Description" placeholder="Enter"rows="3"></textarea>
+    </div>
+    
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
+
+
+<%- include('partials/footer') %>
