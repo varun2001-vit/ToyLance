@@ -93,9 +93,11 @@ app.post("/insert",function(req,res){
         if(err)
         {
             console.log(err);
+            res.render("failure");
         }
         else
         {
+            res.render("success");
             console.log("Successfully inserted");
         } 
     }
@@ -110,9 +112,11 @@ app.post("/delete", function(req, res) {
         if(err)
         {
             console.log(err);
+            res.render("failure");
         }
         else
         {
+            res.render("success");
             console.log("Successfully deleted");
         }
     });
@@ -125,9 +129,11 @@ app.post("/update", function(req, res){
         if(err)
         {
             console.log(err);
+            res.render("failure");
         }
         else
         {
+            res.render("success");
             console.log("updated");
         }
     })
@@ -139,9 +145,11 @@ app.post("/search",function(req,res){
         if(err)
         {
             console.log(err);
+            res.render("failure");
         }
         else
         { 
+            res.render("success");
 
             console.log(result);
         }
